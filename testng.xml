@@ -1,0 +1,54 @@
+<suite name="Regression" >
+    <parameter name="browser" value="Chrome Browser" />
+    <test name="Regression Test" >
+        <classes>
+            <class name="RegisterTest">
+                    <methods>
+                        <include name="validRegisterTest"/>
+                    </methods>
+            </class>
+            <class name="LoginTest">
+                <methods>
+                    <include name="validLoginTest"/>
+                </methods>
+            </class>
+            <class name="HeaderMenuTest">
+                <methods>
+                    <include name="hoverableMenuTest"/>
+                    <include name="secondaryMenuTest"/>
+                </methods>
+            </class>
+            <class name="WishListTest">
+                <methods>
+                    <include name="addItemToWishList"/>
+                </methods>
+            </class>
+            <class name="SearchTest">
+                <methods>
+                    <include name="invalidSearchTest"/>
+                    <include name="searchResultTest"/>
+                </methods>
+            </class>
+            <class name="AddToCartTest">
+                <methods>
+                    <include name="searchForItem"/>
+                    <include name="AddItemToCartTest"/>
+                    <include name="testItemsInCart"/>
+                    <include name="RemoveFromCart"/>
+                </methods>
+            </class>
+            <class name="CheckOutTest">
+                <methods>
+                    <include name="validRegisterTest"/>
+                    <include name="validLoginTest"/>
+                    <include name="searchResultTest"/>
+                    <include name="AddItemToCartTest"/>
+                    <include name="testItemsInCart"/>
+                    <include name="checkOutTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+
+</suite>
